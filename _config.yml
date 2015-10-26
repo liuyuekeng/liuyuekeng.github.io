@@ -1,0 +1,11 @@
+# Site settings
+title: KEN的滑板鞋
+email: liuyuekeng@foxmail.com
+description: >
+    代码相关 书评 影评
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+github_username:  liuyuekeng
+
+# Build settings
+markdown: kramdown
