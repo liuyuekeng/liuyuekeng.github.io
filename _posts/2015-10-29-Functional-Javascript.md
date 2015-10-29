@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "javascript 函数式编程"
+title:  "《javascript 函数式编程》"
 date:   2015-10-29 22:10:00
 categories: JS,书评
 ---
