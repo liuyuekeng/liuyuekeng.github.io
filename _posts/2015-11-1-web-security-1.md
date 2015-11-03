@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "《白帽子讲web安全》"
+title:  "《白帽子讲web安全》客户端脚本安全"
 date:   2015-11-1 23:38:00
 categories: 书评
 ---
