@@ -15,3 +15,32 @@ categories: 书评
 但静下心来慢慢解题就会发现作者藏在题目后面想要告诉你道理。
 不要着急前进，而是当做一种周末的消遣，
 就像玩解密游戏一样，通过思考解决有趣的问题，大概更能够体会到这本书的乐趣。
+
+-----------
+
+###我的答案
+
+####1.1
+我选择用js写一个大数组然后直接调用sort方法
+
+    var fs = require('fs');
+
+    var output = 'start: ';
+    var start = (new Date()).getTime();
+    output += start;
+    fs.readFile('./input', 'utf8', function (err, data) {
+        if (!err) {
+            var array = data.split('\n');
+            array.pop();
+            array = array.sort(function(a, b) {
+                return (a - b);
+            });
+            var res = array.join('\n') + '\n';
+            fs.writeFile('./out', res, function () {
+                var end = (new Date()).getTime();
+                output += (' end: ' + end + ' coust: ' + (end - start));
+                console.log(output);
+            });
+        }
+    });
+
