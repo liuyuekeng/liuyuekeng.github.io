@@ -21,6 +21,7 @@ categories: 书评
 ###我的答案
 
 ####1.1
+
 我选择用js写一个大数组然后直接调用sort方法
 
     var fs = require('fs');
@@ -43,4 +44,47 @@ categories: 书评
             });
         }
     });
+
+####1.2
+
+一开始看到并不知道题目说的什么意思。
+看了答案以及别人的解释，才明白是用32位int型数组拼起来做位向量。
+我一直以为是直接拉一块内存出来然后直接进行操作的囧。
+毕竟写js从来没有自己手动管理过内存，对这种没什么概念。
+
+由于js中也没什么整形，就直接用buffer来写，每一个位8bit
+
+    var buffer;
+    var len = 50;
+    var bitStep = 8;
+    var shift = 3;
+    var marsk = 7;
+
+    function init() {
+        var bufferLen = len / bitStep + 1;
+        buffer = new Buffer(bufferLen);
+        buffer.fill(0);
+    }
+
+    function set(i) {
+        buffer[i >> shift] |= (1 << (i & marsk))
+    }
+
+    function del(i) {
+        buffer[i >> shift] &= ~(1 << (i & marsk))
+    }
+
+    function test(i) {
+        console.log(buffer[i >> shift] & (1 << (i & marsk)));
+    }
+
+    init();
+    console.log(buffer);
+    for (var i = 0; i < 10; i ++) {
+        set(i);
+    }
+    for (var j = 0; j < 20; j ++) {
+        test(j);
+    }
+    console.log(buffer);
 
