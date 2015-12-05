@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "《大卫戈尔的一生》"
-date:   2015-11-22 22:27:00
-categories: web
+date:   2015-12-5 15:48:00
+categories: 影评
 ---
 
 既然生无可恋，不如死得其所
