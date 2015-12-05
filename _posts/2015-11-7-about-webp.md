@@ -20,7 +20,7 @@ google号称编码后体积是jpg的55%，但是编码运算时间会比jpg长�
 相对来说还是一种较新的图片格式，支持程度可以参考
 ![webp supported](/images/webpSupported.png)
 
-[http://caniuse.com/#search=webp](can I use)
+[can I use](http://caniuse.com/#search=webp)
 
 需要注意的是，安卓4浏览器开始支持webp格式，4.3才支持无损压缩和透明色
 在安卓4.0的机子上试过，系统浏览器支持webp格式，但透明色会变成白色
@@ -43,7 +43,7 @@ webp压缩效果拔群，大概是jpg的60%，在低速网络下性能提升还�
 这有一个局限，因为只有在图片请求中才会带图片的accept头，
 如果图片链接需要在之前就在模板中拼好，就没办法做了。
 
-另一个是在客户端判断，这个方法来自一个浏览器特性检测库[https://modernizr.com/](Modrnizr)
+另一个是在客户端判断，这个方法来自一个浏览器特性检测库[Modrnizr](https://modernizr.com/)
 
     var test = 'data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=';
     function addResult(event) {
@@ -56,7 +56,7 @@ webp压缩效果拔群，大概是jpg的60%，在低速网络下性能提升还�
     image.src = test;
 
 大概的思路就是这样子，详细的代码可以到github上关注这个项目。
-[https://github.com/Modernizr/Modernizr](github地址)
+[github地址](https://github.com/Modernizr/Modernizr)
 这是一个很棒的特征检测库。
 
 能力检测放在客户端做是最准确的，而且代码量也很少，建议使用js做判断。
