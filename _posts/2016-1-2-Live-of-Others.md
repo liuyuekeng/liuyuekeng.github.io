@@ -2,7 +2,7 @@
 layout: post
 title:  "《窃听风暴》"
 date:   2016-1-2 17:23:00
-categories: 影评
+categories: films
 ---
 
 Han仔之前推荐过这部电影，说又是一部被译名毁了的好电影。

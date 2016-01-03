@@ -2,7 +2,7 @@
 layout: post
 title:  "关于&lt;video&gt;视频播放"
 date:   2015-12-6 16:18:00
-categories: web
+categories: coding
 ---
 
 ###video标签

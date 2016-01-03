@@ -2,7 +2,7 @@
 layout: post
 title:  "关于viewport"
 date:   2015-10-26 23:14:00
-categories: web
+categories: coding
 ---
 #为什么关注这个
 

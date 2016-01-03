@@ -2,7 +2,7 @@
 layout: post
 title:  "《编程珠玑》"
 date:   2015-11-29 14:24:00
-categories: 书评
+categories: books
 ---
 
 在同事的书桌上看到这本书，想着借来打发周末的时间。

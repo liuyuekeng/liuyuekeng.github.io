@@ -2,7 +2,7 @@
 layout: post
 title:  "关于webp"
 date:   2015-11-7 14:29:00
-categories: web
+categories: coding
 ---
 
 ##webp是什么

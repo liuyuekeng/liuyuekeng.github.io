@@ -1,0 +1,13 @@
+.cate-switch {
+    display: -webkit-flex;
+}
+.cate-switch a {
+    display: block;
+    line-height: 40px;
+    -webkit-flex: 1 100%;
+    text-align: center;
+}
+.cate-switch a.active {
+    background-color: #2a7ae2;
+    color: #fff;
+}

@@ -2,7 +2,7 @@
 layout: post
 title:  "《浪潮之巅》"
 date:   2015-12-26 14:05:00
-categories: 书评
+categories: books
 ---
 
 《编程珠玑》看起来费脑子，所以想找本吹水书来稀释一下，交替着看。

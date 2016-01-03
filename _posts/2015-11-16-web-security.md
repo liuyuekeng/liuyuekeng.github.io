@@ -2,7 +2,7 @@
 layout: post
 title:  "《白帽子讲web安全》"
 date:   2015-11-16 23:12:00
-categories: 书评
+categories: books
 ---
 
 ##安全意识

@@ -2,7 +2,7 @@
 layout: post
 title:  "Node.js 4.0"
 date:   2015-10-29 00:30:00
-categories: Node
+categories: coding
 ---
 
 #突然间就4.0了

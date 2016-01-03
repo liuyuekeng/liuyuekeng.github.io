@@ -2,7 +2,7 @@
 layout: post
 title:  "《自制搜索引擎》"
 date:   2016-1-1 17:08:00
-categories: 书评
+categories: books
 ---
 
 日本人似乎很钟爱DIY系列，自制操作系统，自制编程语言，甚至自制CPU，都是日本人写的。

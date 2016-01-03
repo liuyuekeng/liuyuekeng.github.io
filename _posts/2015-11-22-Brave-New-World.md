@@ -2,7 +2,7 @@
 layout: post
 title:  "《美丽新世界》"
 date:   2015-11-22 22:27:00
-categories: 书评
+categories: books
 ---
 
 反乌托邦三部曲之一，为读者描绘了一个极度扭曲的未来社会形态。

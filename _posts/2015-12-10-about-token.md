@@ -2,7 +2,7 @@
 layout: post
 title:  "关于token"
 date:   2015-12-10 23:59:00
-categories: web
+categories: coding
 ---
 
 ##token是啥

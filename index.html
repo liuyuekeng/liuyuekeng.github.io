@@ -1,10 +1,11 @@
 ---
 layout: default
+categories: index
 ---
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  {% include cate_switch.html %}
 
   <ul class="post-list">
     {% for post in site.posts %}
