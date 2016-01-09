@@ -75,20 +75,20 @@ are useful in their own right (see Table 1.1), we also describe general approach
 designing and analyzing functional data structures, including powerful new techniques
 for reasoning about the running time of lazy programs.
 
-    * Persistent data structures. Until this research, it was widely believed that amortization
-    was incompatible with persistence [DST94, Ram92]. However, we show that memoization,
-    in the form of lazy evaluation, is the key to reconciling the two. Furthermore, as
-    noted by Kaplan and Tarjan [KT96b], functional programming is a convenient medium
-    for developing new persistent data structures, even when the data structure will eventually
-        be implemented in an imperative language. The data structures and techniques in
-        this thesis can easily be adapted to imperative languages for those situations when an
-        imperative programmer needs a persistent data structure.
+* Persistent data structures. Until this research, it was widely believed that amortization
+was incompatible with persistence [DST94, Ram92]. However, we show that memoization,
+in the form of lazy evaluation, is the key to reconciling the two. Furthermore, as
+noted by Kaplan and Tarjan [KT96b], functional programming is a convenient medium
+for developing new persistent data structures, even when the data structure will eventually
+be implemented in an imperative language. The data structures and techniques in
+this thesis can easily be adapted to imperative languages for those situations when an
+imperative programmer needs a persistent data structure.
 
-        * Programming language design. Functional programmers have long debated the relative
-        merits of strict and lazy evaluation. This thesis shows that both are algorithmically important
-        and suggests that the ideal functional language should seamlessly integrate both.
-        As a modest step in this direction, we propose $-notation, which allows the use of lazy
-        evaluation in a strict language with a minimum of syntactic overhead.
+* Programming language design. Functional programmers have long debated the relative
+merits of strict and lazy evaluation. This thesis shows that both are algorithmically important
+and suggests that the ideal functional language should seamlessly integrate both.
+As a modest step in this direction, we propose $-notation, which allows the use of lazy
+evaluation in a strict language with a minimum of syntactic overhead.
 
 ##1.4 源码
 
