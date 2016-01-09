@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "翻译《Purely Functional Data Structures》"
-date:   2015-11-16 23:12:00
+date:   2016-1-9 17:14:00
 categories: [books, coding]
 ---
 
