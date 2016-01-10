@@ -9,3 +9,5 @@ github_username:  liuyuekeng
 
 # Build settings
 markdown: kramdown
+
+encoding: utf-8
