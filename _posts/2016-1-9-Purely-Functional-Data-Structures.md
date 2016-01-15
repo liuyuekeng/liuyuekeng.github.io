@@ -31,6 +31,9 @@ categories: [books, coding]
 
 <a href="#3-1">3.1 传统的摊销</a>
 
+<a href="#3-1-1">3.1.1 例子：队列</a>
+
+
 #<a name="1">1 简介</a>
 
 对高效数据结构的研究已经超过30年，这些牛逼的程序员从各种复杂问题中提取出高效的解决方案，产生一揽子著作。
@@ -451,7 +454,7 @@ c<sub>i</sub> 是分配给操作 i 的分数，
 
 要注意，分数和潜力只是分析工具，两者都不会实际出现在程序中（注释除外）
 
-###3.1.1 例子：队列
+###<a name="3-1-1">3.1.1 例子：队列</a>
 
 We next illustrate the banker’s and physicist’s methods by analyzing a simple functional implementation
 of the queue abstraction, as specified by the signature in Figure 3.1.
