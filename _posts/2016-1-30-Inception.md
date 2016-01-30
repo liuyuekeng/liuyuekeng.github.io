@@ -17,7 +17,7 @@ categories: films
 从主角接受了老婆的死之后，他已经不会再感到困惑了。
 目睹主角解开心结的小女孩明白这一点。
 
-![screenshot](images/Inception.jpg)
+![screenshot](/images/Inception.jpg)
 
 主角也说过，正面的感情最终会战胜负面的感性。
 他们让富二代和死去的父亲在梦中和解，温情战胜了恨意。
