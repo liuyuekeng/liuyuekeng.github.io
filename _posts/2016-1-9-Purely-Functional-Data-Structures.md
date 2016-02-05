@@ -1008,4 +1008,3 @@ Figure 3.3: Amortized queues using the banker’s method.
 所以我们用普通的列表来表现它。
 再一次，我们特别地跟踪列表的长度，
 并保证头部列表总是至少有尾部列表那么长。
-
