@@ -11,3 +11,11 @@ github_username:  liuyuekeng
 markdown: kramdown
 
 encoding: utf-8
+
+gems:
+- jekyll-mentions
+- jemoji
+- jekyll-redirect-from
+- jekyll-sitemap
+
+- jekyll-feed
