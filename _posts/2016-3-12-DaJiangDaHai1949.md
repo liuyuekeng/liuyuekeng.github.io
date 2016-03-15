@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "《大江大海1949》"
-date:   2016-3-12 17::00
+date:   2016-3-12 17:00:00
 categories: books
 ---
 
