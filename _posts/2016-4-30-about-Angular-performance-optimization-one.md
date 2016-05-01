@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "关于Angular性能优化（一）"
+title:  "关于Angular性能优化——预加载"
 date:   2016-4-30 14:41:00
 categories: coding
 ---
