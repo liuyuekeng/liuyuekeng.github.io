@@ -1,0 +1,17 @@
+#! /bin/sh
+
+date=$(date +%Y-%m-%d)
+time=$(date +%H:%M:%S)
+title=$1
+postname=$date-$title.md
+
+content=`cat <<EOF
+---
+layout: post
+title: "$title"
+date: $date $time
+categories:
+---
+EOF`
+
+echo "$content" > $postname
