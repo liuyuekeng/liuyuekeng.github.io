@@ -9,7 +9,8 @@ categories: coding
 加上国内环境比较复杂，各家浏览器都打着自己的小算盘，无疑加大了通信的难度。
 这里来总结下工作中接触过的几种方式（这里只讨论安卓）。
 
-###本地server代理
+### 本地server代理
+
 我们想要web页面和本地的应用A进行交互，那么就让应用A在后台启一个server。
 web页面中向这个本地的server发送HTTP请求，由本地server进行代理，与应用A进行交互。
 本地server在这里扮演着一个双重角色，他即是一个HTTP服务器——接受web页面的HTTP请求，
@@ -27,7 +28,8 @@ web页面中向这个本地的server发送HTTP请求，由本地server进行代�
 这其实是一个比较名不正言不顺的方案，纯粹为了绕过浏览器沙盒加了一个本地server代理，随着HTTPS的到来也就过时了。
 (其实目前有些国内浏览器还没有禁止在HTTPS环境下发送HTTP请求，但从趋势上来看也终将消亡)
 
-###OpenURL
+### OpenURL
+
 如果我们不想局限于与某个应用A的交互，而是想调起任意本地应用的功能，就需要一种更通用的形式。
 看看上面的本地server形式，如果浏览器能够承担这个桥梁的职责，那我们就完全用不着这个server了。
 换句话说，我们可以把对本地server的依赖转移到对浏览器的依赖上。
@@ -60,7 +62,7 @@ web页面中向这个本地的server发送HTTP请求，由本地server进行代�
 
 ![authentication server](/images/app-invoke-from-website2.png)
 
-###Intent 
+### Intent 
 
 intent是安卓系统里面应用之间通信的消息对象，而浏览器也是一个应用。
 那么浏览器如果支持代理Intent请求，也可以完成web页面到本地应用的通讯。
@@ -89,7 +91,7 @@ intent是安卓系统里面应用之间通信的消息对象，而浏览器也�
 
 测试链接来自https://firebase.google.com/docs/app-indexing/android/test#http-url-testing-tool
 
-###参考
+### 参考
 
 1. https://paul.kinlan.me/android-intent-fallback-detection/
 2. https://paul.kinlan.me/every-browser-should-support-intent-urls/
