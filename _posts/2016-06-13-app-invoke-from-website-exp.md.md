@@ -5,7 +5,7 @@ date: 2016-06-13 13:44:46
 categories:
 ---
 
-在上一篇blog里，讨论了调起的各种调起链接的形式，现在来试试实际上效果如何。
+在上一篇blog里，讨论了[调起的各种链接形式](/coding/2016/06/12/app-invoke-from-website.html)，现在来试试实际上效果如何。
 
 <a href="weixin://">微信custom scheme</a>
 <br><a href="intent://#Intent;scheme=weixin;end">微信intent scheme</a>
