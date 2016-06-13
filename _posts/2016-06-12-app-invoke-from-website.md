@@ -97,11 +97,11 @@ intent是安卓系统里面应用之间通信的消息对象，而浏览器也�
 
 ### 参考
 
-1. [](https://paul.kinlan.me/android-intent-fallback-detection/)
-2. [](https://paul.kinlan.me/every-browser-should-support-intent-urls/)
-3. [](https://paul.kinlan.me/launch-app-from-web-with-fallback/)
-4. [](https://firebase.google.com/docs/app-indexing/android/test#http-url-testing-tool)
-5. [](http://drops.wooyun.org/papers/2893)
-6. [](http://www.xxdafa.com/article?id=56965123b8063f1a058b456f)
-7. [](http://biancheng.dnbcw.info/shouji/390830.html)
-8. [](http://liangruijun.blog.51cto.com/3061169/634411/)
+1. [https://paul.kinlan.me/android-intent-fallback-detection/](https://paul.kinlan.me/android-intent-fallback-detection/)
+2. [https://paul.kinlan.me/every-browser-should-support-intent-urls/](https://paul.kinlan.me/every-browser-should-support-intent-urls/)
+3. [https://paul.kinlan.me/launch-app-from-web-with-fallback/](https://paul.kinlan.me/launch-app-from-web-with-fallback/)
+4. [https://firebase.google.com/docs/app-indexing/android/test#http-url-testing-tool](https://firebase.google.com/docs/app-indexing/android/test#http-url-testing-tool)
+5. [http://drops.wooyun.org/papers/2893](http://drops.wooyun.org/papers/2893)
+6. [http://www.xxdafa.com/article?id=56965123b8063f1a058b456f](http://www.xxdafa.com/article?id=56965123b8063f1a058b456f)
+7. [http://biancheng.dnbcw.info/shouji/390830.html](http://biancheng.dnbcw.info/shouji/390830.html)
+8. [http://liangruijun.blog.51cto.com/3061169/634411/](http://liangruijun.blog.51cto.com/3061169/634411/)
