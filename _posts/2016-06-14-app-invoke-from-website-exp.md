@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "web页面调起app测试"
-date: 2016-06-13 13:44:46
+date: 2016-06-14 10:05:46
 categories: coding
 ---
 
@@ -71,7 +71,7 @@ visibilitychange是什么东西可以参考[mozilla的文档](https://developer.
 <tbody>
 <tr><td>锤子自带浏览器</td><td>不支持</td></tr>
 <tr><td>小米自带浏览器</td><td>支持</td></tr>
-<tr><td>chrome 50</td><td></td>支持</tr>
+<tr><td>chrome 50</td><td>支持</td></tr>
 <tr><td>手机百度 7.3.1</td><td>不支持</td></tr>
 <tr><td>QQ浏览器 6.7.1</td><td>支持</td></tr>
 <tr><td>UC浏览器 10.10</td><td>支持</td></tr>
