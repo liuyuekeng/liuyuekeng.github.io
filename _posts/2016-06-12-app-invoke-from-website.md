@@ -93,7 +93,7 @@ intent是安卓系统里面应用之间通信的消息对象，而浏览器也�
 
 ### 实际情况
 
-这几种方式实际效果，以及在业务中实践的讨论见[传送门](/coding/2016/06/12/app-invoke-from-website-exp.html)
+这几种方式实际效果，以及在业务中实践的讨论见[传送门](/coding/2016/06/14/app-invoke-from-website-exp.html)
 
 ### 参考
 
