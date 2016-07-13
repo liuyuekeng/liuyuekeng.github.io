@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The-Chrysanthemum-and-the-Sword"
+title: "《菊与刀》"
 date: 2016-07-10 21:12:38
 categories: books
 ---
