@@ -1,11 +1,17 @@
 ---
 layout: post
-title: "web页面调起app测试"
+title: "web页面调起app实践一"
 date: 2016-06-14 10:05:46
 categories: coding
 ---
 
-在上一篇blog里，讨论了[调起的各种链接形式](/coding/2016/06/12/app-invoke-from-website.html)，现在来试试实际上效果如何。
+系列传送门
+
+[关于web页面调起APP](/coding/2016/06/12/app-invoke-from-website.html)
+
+[web页面调起app实践一](/coding/2016/06/14/app-invoke-from-website-exp.html)
+
+[web页面调起app实践二](/coding/2016/07/21/app-invoke-from-website-exp2.html)
 
 ### intent兼容性测试
 
@@ -86,4 +92,4 @@ visibilitychange是什么东西可以参考[mozilla的文档](https://developer.
 都只是检测document的hidden属性或者visibilityState属性（加上前缀判断），
 但似乎没有办法判断visibilitychange事件是否存在╮(╯3╰)╭
 
-特征检测行不通，可能需要使用UA检测，对此隐隐感到有些担忧，但暂时没有更好的方案。
+如果想要稳健一些，可能需要放弃visibilitychange事件，转而自己来实现对visibilityState的轮询。

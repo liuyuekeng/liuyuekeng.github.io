@@ -5,6 +5,14 @@ date: 2016-06-12 10:51:11
 categories: coding
 ---
 
+系列传送门
+
+[关于web页面调起APP](/coding/2016/06/12/app-invoke-from-website.html)
+
+[web页面调起app实践一](/coding/2016/06/14/app-invoke-from-website-exp.html)
+
+[web页面调起app实践二](/coding/2016/07/21/app-invoke-from-website-exp2.html)
+
 工作中会遇到许多web页面要和本地APP进行交互的场景，由于隔着浏览器沙盒和安卓系统，要顺畅地实现这种通信是比较蛋疼的。
 加上国内环境比较复杂，各家浏览器都打着自己的小算盘，无疑加大了通信的难度。
 这里来总结下工作中接触过的几种方式（这里只讨论安卓）。
@@ -90,10 +98,6 @@ intent是安卓系统里面应用之间通信的消息对象，而浏览器也�
 <a href="intent://www.youtube.com/watch?v=dQw4w9WgXcQ#Intent;scheme=http;package=com.google.android.youtube;end">http://www.youtube.com/watch?v=dQw4w9WgXcQ</a>
 
 测试链接来自https://firebase.google.com/docs/app-indexing/android/test#http-url-testing-tool
-
-### 实际情况
-
-这几种方式实际效果，以及在业务中实践的讨论见[传送门](/coding/2016/06/14/app-invoke-from-website-exp.html)
 
 ### 参考
 
