@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "前端现在太花哨了吗？"
+title: "关于“在2016年学JavaScript是一种什么样的体验”"
 date: 2016-10-09 21:50:53
 categories: coding
 ---
