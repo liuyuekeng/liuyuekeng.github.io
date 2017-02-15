@@ -146,10 +146,11 @@ cn和organization岁自己喜欢写
 
 ### 把ocserv包装成服务
 
-包装成服务一是比较稳定，而是启动停止比较方便，不用手动杀进程
+包装成服务一是比较稳定，二是启动停止比较方便，不用手动杀进程
 
 ubuntu 16已经放弃了upstart，改用systemd来做进程守护的工作。
-网上的文章多数还停留在ubuntu 14，用的upstart，这里记录一下使用systemd怎么配置
+网上的文章多数还停留在ubuntu 14，用的upstart脚本，没找到使用systemd的参考
+所以只好自己动手摸索一下了，这里记录一下使用systemd怎么配置
 
 同样在ocserv的doc目录下，有默认的systemd配置，我们在这个配置基础上做修改
 
