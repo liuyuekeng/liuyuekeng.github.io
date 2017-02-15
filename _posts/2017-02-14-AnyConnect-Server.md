@@ -14,6 +14,9 @@ VULTR上就有文档教你怎么装
 我用的是ubuntu16.10，现在官方的长期支持版本，装东西方便，
 ocserv也更新到了0.11.6。
 可能是因为版本不同，遇到几个依赖问题，所以稍微把文档翻译并补充一下。
+在文档之外，还有一些优化的东西，也一并记录下来
+
+### 安装ocserv
 
 先下一个ocserv
 
@@ -140,3 +143,38 @@ cn和organization岁自己喜欢写
 
 在电脑，或者手机下思科的AnyConnect客户端，用刚刚创建的用户名和密码连接就可以了。
 因为证书是我们自己签的，会提示不让连接不受信任的服务器，所以要在设置里把这个选项关掉。
+
+### 把ocserv包装成服务
+
+包装成服务一是比较稳定，而是启动停止比较方便，不用手动杀进程
+
+ubuntu 16已经放弃了upstart，改用systemd来做进程守护的工作。
+网上的文章多数还停留在ubuntu 14，用的upstart，这里记录一下使用systemd怎么配置
+
+同样在ocserv的doc目录下，有默认的systemd配置，我们在这个配置基础上做修改
+
+	cp ~/ocserv-0.11.6/doc/systemd/standalone/ocserv.service /lib/systemd/system
+	vim /lib/systemd/system/ocserv.service
+
+修改启动命令
+
+	- ExecStart=/usr/sbin/ocserv --foreground --pid-file /var/run/ocserv.pid --config /etc/ocserv/ocserv.conf
+	+ ExecStart=/usr/local/sbin/ocserv --foreground --pid-file /var/run/ocserv.pid --config /etc/ocserv/config
+
+可以用which ocserv看看ocserv装在什么位置，我的在/usr/local/sbin/ocserv，对应修改。
+然后配置文件指定到之前放的位置/etc/ocserv/config
+
+保存之后重新加载配置
+
+	systemctl daemon-reload
+
+接着就可以使用命令启动，停止，重启ocserv服务了
+
+	systemctl start/stop/restart ocserv
+
+通过status可以查询当前服务的状态
+
+	systemctl status ocserv
+
+更多关于systemd的内容，可以参考阮博士的博客
+[Systemd 入门教程](http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html)
