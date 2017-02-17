@@ -190,13 +190,13 @@ ubuntu 16已经放弃了upstart，改用systemd来做进程守护的工作。
 
 let\`s encrypt是一个免费的CA，但需要向他证明域名在自己的掌控下，官方推荐的验证方法是使用certbot进行验证。
 具体来说就是在服务器上跑一个客户端，会临时启一个web服务，let\`s encrypt访问你的域名，就完成了验证过程。
-需要注意的是，如果服务器上80端口自己有跑web服务，会发生冲突。
 
 先安装certbot客户端
 
 	apt-get install certbot
 
-然后进行验证
+这里有一点要注意一下，如果机器上跑着web服务，certbot提供了常见web服务器（nginx，apache等）的插件方式，
+避免与web服务冲突，具体见[官网](https://certbot.eff.org/)。我机器上没架web服务，直接使用certbot内置的一个服务器进行验证。
 
 	certbot certonly --standalone -d example.com -d www.example.com
 
@@ -210,6 +210,15 @@ let\`s encrypt是一个免费的CA，但需要向他证明域名在自己的掌�
 	systemctl restart ocserv
 
 因为let\`s encrypt签的证书时间只有90天，所以到期之前需要续签。
-可以直接用定时任务重新跑一边certbot，也可以交给certbot做这件事
 
-	certbot renew
+	certbot renew --dry-run
+	
+renew操作会自动续签所有30天内过期的证书，--dry-run参数是测试用的。
+试运行一下会发现端口被ocserv占用了可以通过加hook解决。
+
+	certbot renew --dry-run --pre-hook 'systemctl stop ocserv' --post-hook 'systemctl start ocserv'
+
+没有异常报错的话，就可以加上crontab运行了，hook中的代码只会在有证书需要更新的时候才会运行，
+所以crontab的间隔时间没必要太讲究，我这里设置成每周运行一次，--quiet忽略报错信息
+
+	0 3 * * 1 /usr/bin/certbot renew --quiet --pre-hook 'systemctl stop ocserv' --post-hook 'systemctl start ocserv'
