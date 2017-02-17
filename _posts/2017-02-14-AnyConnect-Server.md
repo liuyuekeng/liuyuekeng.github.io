@@ -179,3 +179,37 @@ ubuntu 16已经放弃了upstart，改用systemd来做进程守护的工作。
 
 更多关于systemd的内容，可以参考阮博士的博客
 [Systemd 入门教程](http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html)
+
+### 域名与证书
+
+因为CA证书是自签的，AnyConnect连接的时候会提示是不受信任的服务器。
+恰好自己想搞个域名耍耍，有了域名就可以给服务器签一个受信任的证书了。
+
+首先，需要买一个域名，货比三家之后发现namecheap比较便宜，站点做得也比较好看，就它了。
+注册完域名，设置A record，指到自己的服务器的IP。（为了完成后续的验证，把www的record也加上）
+
+let\`s encrypt是一个免费的CA，但需要向他证明域名在自己的掌控下，官方推荐的验证方法是使用certbot进行验证。
+具体来说就是在服务器上跑一个客户端，会临时启一个web服务，let\`s encrypt访问你的域名，就完成了验证过程。
+需要注意的是，如果服务器上80端口自己有跑web服务，会发生冲突。
+
+先安装certbot客户端
+
+	apt-get install certbot
+
+然后进行验证
+
+	certbot certonly --standalone -d example.com -d www.example.com
+
+会有输入邮箱等步骤，完成验证之后会把证书放在/etc/letsencrypt/live/example/下面(example就是你的域名)
+
+接着我们就可以把之自己签的CA证书和服务器证书删除，改用let\`s encrypt签发的证书。
+
+	cd /etc/ocserv
+	ln -s /etc/letsencrypt/live/example/fullchain.pem server-cert.pem
+	ln -s /etc/letsencrypt/live/example/privkey.pem server-key.pem
+	systemctl restart ocserv
+
+因为let\`s encrypt签的证书时间只有90天，所以到期之前需要续签。
+可以直接用定时任务重新跑一边certbot，也可以交给certbot做这件事
+
+	certbot renew --dry-run 
