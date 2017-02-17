@@ -212,4 +212,4 @@ let\`s encrypt是一个免费的CA，但需要向他证明域名在自己的掌�
 因为let\`s encrypt签的证书时间只有90天，所以到期之前需要续签。
 可以直接用定时任务重新跑一边certbot，也可以交给certbot做这件事
 
-	certbot renew --dry-run 
+	certbot renew
